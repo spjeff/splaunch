@@ -2,6 +2,7 @@
 Wrapper to automate PowerShell remoting. Two CSV files hold target server names and shortcut cmdlets so you can easily mix and match to run without typing much.
 
 ![image](https://raw.githubusercontent.com/spjeff/splaunch/master/doc/splaunch.png)
+[![](https://raw.githubusercontent.com/spjeff/splaunch/master/doc/download.png)](https://github.com/spjeff/splaunch/releases/download/SPLaunch/SPLaunch.zip)
 
 ## Business Challenge
 * Growing list of servers
