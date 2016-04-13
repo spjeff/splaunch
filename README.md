@@ -26,7 +26,7 @@ Open just the first server across all farms and show the SharePoint build number
 
 **NOTE - Must update "Noun" CSV file with target machine names, AD domain, and user account before any commands can be run**
 
-**NOTE - Must run "Enable-WSManCredSSP -Role client -DelegateComputer \*" locally before trying to open remote sessions**
+**NOTE - Must run `Enable-WSManCredSSP -Role client -DelegateComputer *` locally before trying to open remote sessions**
 
 ![image](https://raw.githubusercontent.com/spjeff/splaunch/master/doc/splaunch-context.png)
 
@@ -50,7 +50,7 @@ Open just the first server across all farms and show the SharePoint build number
 ## Warnings
 * Account lockout - Possible if typing the password wrong and open many sessions at once.
 * System update - Verb CSV can modify configuration on many servers quickly. Use carefully for changes.
-* Desktop O/S must be Windows 7 or higher. Windows XP cannot run "Enable-WSManCredSSP -Role client -DelegateComputer *"
+* Desktop O/S must be Windows 7 or higher. Windows XP cannot run `Enable-WSManCredSSP -Role client -DelegateComputer *`
 
 ## Contact
 Please drop a line to [@spjeff](https://twitter.com/spjeff) or [spjeff@spjeff.com](mailto:spjeff@spjeff.com)
