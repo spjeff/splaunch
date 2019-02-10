@@ -194,7 +194,8 @@ function LaunchAFarm ($farmName, $firstOnly, $callback) {
  # THIS farm local
                         if ($farm -eq "THIS") {
                             $machines = ""
-                            $servers = get-spserver |? {$_.role -ne "Invalid"}
+                            Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue | Out-Null
+                            $servers = Get-SPServer |? {$_.role -ne "Invalid"}
                             $servers | % {$machines += $_.Address + ","}
 $machines = $machines.substring(0, $machines.length-1)
 SPLaunchMachines $machines.Split(",") $env:userdomain $env:username $a $p $s
